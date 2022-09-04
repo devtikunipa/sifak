@@ -1,8 +1,16 @@
+import ScrollTop from "./components/ScrollTop";
+import ThemeRoutes from "./configs/routes";
+import ThemeCustomization from "./configs/ThemeCustomization";
 
-function App() {
+
+const App = () => {
   return (
-    <div> Hello </div>
-  );
+    <ThemeCustomization>
+      <ScrollTop>
+        <ThemeRoutes />
+      </ScrollTop>
+    </ThemeCustomization>
+  )
 }
 
 export default App;
