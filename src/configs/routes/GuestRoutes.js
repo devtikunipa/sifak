@@ -1,4 +1,5 @@
 import { lazy } from "react";
+import { Navigate } from "react-router-dom";
 import Loadable from "../../components/Loadable";
 import GuestLayout from "../../views/layouts/GuestLayout";
 
@@ -51,11 +52,15 @@ const GuestRoutes = {
                 {
                     path: ':slug',
                     element: <Department />
+                },
+                {
+                    path: '',
+                    element: <Navigate to='/notfound' replace='true' />
                 }
             ]
         },
         {
-            path: 'kegiatan',
+            path: 'aktivitas',
             children: [
                 {
                     path: '',
