@@ -70,10 +70,6 @@ export default function NavGroup(props) {
                 aria-expanded={open ? 'true' : undefined}
                 variant="text"
                 sx={{
-                    '&:hover': {
-                        bgcolor: 'transparent',
-                        color: 'primary.dark'
-                    },
                     fontSize: '16px',
                     ...custom
                 }}
@@ -98,9 +94,6 @@ export default function NavGroup(props) {
                         <MenuItem key={page.id} disableRipple sx={{ p: 0 }}>
                             <Link href={page.url} color='inherit' sx={{
                                 width: '100%', height: '100%',
-                                '&:hover': {
-                                    bgcolor: 'primary.lighter'
-                                },
                                 py: 1.7, px: 2, m: 0
                             }}>{page.title}</Link>
                         </MenuItem>

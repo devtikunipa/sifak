@@ -6,8 +6,9 @@ import Navbar from './Navbar';
 const GuestLayout = () => (
     <>
         <Navbar />
-        <Typography variant='h4'>Hello Guest</Typography>
-        <Outlet />
+        <main>
+            <Outlet />
+        </main>
     </>
 );
 

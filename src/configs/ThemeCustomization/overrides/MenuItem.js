@@ -1,13 +1,10 @@
-// ==============================|| OVERRIDES - LINK ||============================== //
+// ==============================|| OVERRIDES - MENU ITEM ||============================== //
 import {
     experimental_sx as sx,
 } from '@mui/material/styles';
-export default function Link(theme) {
+export default function MenuItem(theme) {
     return {
-        MuiLink: {
-            defaultProps: {
-                underline: 'none'
-            },
+        MuiMenuItem: {
             styleOverrides: {
                 root: sx({
                     '&:hover': {

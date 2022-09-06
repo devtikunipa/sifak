@@ -1,15 +1,13 @@
-// ==============================|| OVERRIDES - LINK ||============================== //
+// ==============================|| OVERRIDES - LIST ITEM BUTTON||============================== //
 import {
     experimental_sx as sx,
 } from '@mui/material/styles';
-export default function Link(theme) {
+export default function ListItemButton(theme) {
     return {
-        MuiLink: {
-            defaultProps: {
-                underline: 'none'
-            },
+        MuiListItemButton: {
             styleOverrides: {
                 root: sx({
+                    fontWeight: 600,
                     '&:hover': {
                         bgcolor: theme.palette.primary.lighter
                     },

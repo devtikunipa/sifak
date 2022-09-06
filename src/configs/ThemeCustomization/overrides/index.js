@@ -17,6 +17,8 @@ import Tab from './Tab';
 import TableCell from './TableCell';
 import Tabs from './Tabs';
 import Typography from './Typography';
+import MenuItem from './MenuItem';
+import ListItemButton from './ListItemButton';
 
 // ==============================|| OVERRIDES - MAIN ||============================== //
 
@@ -30,7 +32,9 @@ export default function ComponentsOverrides(theme) {
         IconButton(theme),
         InputLabel(theme),
         LinearProgress(),
-        Link(),
+        Link(theme),
+        MenuItem(theme),
+        ListItemButton(theme),
         ListItemIcon(),
         OutlinedInput(theme),
         Tab(theme),

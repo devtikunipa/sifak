@@ -1,5 +1,7 @@
 // ==============================|| OVERRIDES - BUTTON ||============================== //
-
+import {
+    experimental_sx as sx,
+} from '@mui/material/styles';
 export default function Button(theme) {
     const disabledStyle = {
         '&.Mui-disabled': {
@@ -13,9 +15,13 @@ export default function Button(theme) {
                 disableElevation: true,
             },
             styleOverrides: {
-                root: {
+                root: sx({
                     fontWeight: 500,
-                },
+                    '&:hover': {
+                        bgcolor: 'transparent',
+                        color: 'primary.dark'
+                    },
+                }),
                 contained: {
                     ...disabledStyle
                 },

@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 const ButtonCustom = (props) => {
     const { text, variant, color, custom } = props;
     return (
-        <Button variant={variant ? variant : 'text'} color={color && color} sx={{
+        <Button variant={variant ? variant : 'text'} color={color ? color : 'inherit'} sx={{
             fontSize: '16px', '&:hover': {
                 bgcolor: 'transparent',
                 color: 'primary.dark',
