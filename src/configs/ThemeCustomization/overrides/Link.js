@@ -11,7 +11,8 @@ export default function Link(theme) {
             styleOverrides: {
                 root: sx({
                     '&:hover': {
-                        bgcolor: theme.palette.primary.lighter
+                        bgcolor: theme.palette.primary.lighter,
+                        color: 'inherit'
                     },
                 })
             }

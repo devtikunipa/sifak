@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 const App = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000, offset: 0, easing: 'ease-in-back' });
+    Aos.init({ duration: 2000, offset: 0, easing: 'ease-in-back', once: true });
     Aos.refresh();
   })
   return (

@@ -1,4 +1,4 @@
 import { Headline } from './Statics';
-import { DataCarousel, NewAcademics, NewActivities, NewDedicates, NewNotices, NewRisets } from './Dinamycs';
+import { DataCarousel, DataAcademics, DataActivities, DataDedicates, InfoAcademic, DataNotices, DataRisets } from './Dinamycs';
 
-export { Headline, DataCarousel, NewAcademics, NewActivities, NewDedicates, NewNotices, NewRisets };
+export { Headline, DataCarousel, DataAcademics, DataActivities, DataDedicates, InfoAcademic, DataNotices, DataRisets };
