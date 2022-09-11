@@ -3,12 +3,12 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import CarouselSec from './CarouselSec';
-import { Headline, DataActivities, DataRisets, InfoAcademic, DataNotices, DataAcademics } from '../../../../configs/localdata/home-data';
+import { Headline, DataActivities, DataRisets, DataNotices, DataAcademics } from '../../../../configs/localdata/home-data';
 import { Divider, Grid } from '@mui/material';
-import News from './News';
 import CountUpInfo from './CountUpInfo';
 import NewNotices from './NewNotices';
 import NewAcademics from './NewAcademics';
+import CardMediaCustom from '../../../../components/CardMediaCustom';
 
 const Home = () => {
     return (
@@ -31,7 +31,7 @@ const Home = () => {
                         {
                             DataActivities.slice(0, 4).map((item) => (
                                 <Grid key={item.slug} item lg={3} md={4} sm={6} xs={12}>
-                                    <News item={item} />
+                                    <CardMediaCustom item={item} prefix="aktivitas/" />
                                 </Grid>
                             ))
                         }
@@ -52,7 +52,7 @@ const Home = () => {
                         {
                             DataRisets.slice(0, 4).map((item) => (
                                 <Grid key={item.slug} item lg={3} md={4} sm={6} xs={12}>
-                                    <News item={item} />
+                                    <CardMediaCustom item={item} prefix="penelitian/" />
                                 </Grid>
                             ))
                         }
@@ -65,15 +65,7 @@ const Home = () => {
                     <Box sx={{ bgcolor: 'secondary.light', height: '1px', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 2, mb: 5 }}>
                         <Box sx={{ bgcolor: 'primary.dark', height: '3px', width: '120px' }} />
                     </Box>
-                    <Grid container spacing={2} rowSpacing={1}>
-                        {
-                            InfoAcademic.map((item) => (
-                                <Grid key={item.title} item lg={3} md={3} sm={6} xs={6}>
-                                    <CountUpInfo item={item} />
-                                </Grid>
-                            ))
-                        }
-                    </Grid>
+                    <CountUpInfo />
                     <Grid container spacing={1} rowSpacing={2}>
                         <Grid item lg md xs={12}>
                             <Box sx={{

@@ -18,7 +18,7 @@ function Item(props) {
         <Paper sx={{
             height: '500px',
             backgroundColor: 'transparent',
-            backgroundImage: `url(${props.item.img})`,
+            backgroundImage: `url(${props.item.path})`,
             backgroundPosition: 'center center',
             backgroundRepeat: 'no-repeat',
             display: 'flex',

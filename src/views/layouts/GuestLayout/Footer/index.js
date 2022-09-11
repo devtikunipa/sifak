@@ -30,7 +30,7 @@ const Footer = () => {
                             <Divider sx={{ mt: 1, mb: 2 }} />
                             {
                                 About.children.map((item) => (
-                                    <Link key={item.id} target='_blank' rel="noopener" variant='h6' color='white' href={item.url} sx={{ '&:hover': { bgcolor: 'transparent', color: 'warning.light' }, display: 'block', py: 0.5 }}>{item.title}</Link>
+                                    <Link key={item.id} target='_blank' rel="noopener" variant='h6' color='white' href={item.url} sx={{ '&:hover': { bgcolor: 'transparent', color: 'primary.200' }, display: 'block', py: 0.5 }}>{item.title}</Link>
                                 ))
                             }
                         </Box>
@@ -41,7 +41,7 @@ const Footer = () => {
                             <Divider sx={{ mt: 1, mb: 2 }} />
                             {
                                 DataLink.map((item) => (
-                                    <Link key={item.id} target='_blank' rel="noopener" variant='h6' color='white' href={item.url} sx={{ '&:hover': { bgcolor: 'transparent', color: 'warning.light' }, display: 'block', py: 0.5 }}>{item.title}</Link>
+                                    <Link key={item.id} target='_blank' rel="noopener" variant='h6' color='white' href={item.url} sx={{ '&:hover': { bgcolor: 'transparent', color: 'primary.200' }, display: 'block', py: 0.5 }}>{item.title}</Link>
                                 ))
                             }
                         </Box>
